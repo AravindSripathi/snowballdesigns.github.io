@@ -1,0 +1,192 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+}
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #ffffff;
+}
+.navbar{
+    background-color: #ffffff;
+    padding: 0 !important;
+}
+.navbar-brand img{
+    height: 56px;
+    padding-left: 79px;
+    background-color: #ff000000;
+}
+.navbar-nav li a{
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 20px;
+    justify-content:center ;
+    align-self: center;
+    float: right;
+    text-align: left;
+}
+.navbar-toggler{
+    outline: none;
+}
+
+/*-------------banner section-----------*/
+
+#banner{
+    position: relative;
+}
+.promo-title{
+    position: absolute;
+    align-self: center;
+    text-align: start;
+    color: #FFFFFF;
+    left: 30%;
+    right: 0;
+    width: fit-content;
+    font-size: 40px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+.promo-quality{
+    position: absolute;
+    align-self: center;
+    text-align: start;
+    color: #FFFFFF;
+    left: 30%;
+    bottom: 15%;
+    right: 0;
+    width: fit-content;
+    font-size: 15px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+/*-------------What does it do for you-----------*/
+
+#What-does-it-do{
+    padding:150px 0;
+    height: 100vh;
+    width: 100vw;
+}
+.title{
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 35px;
+}
+.stats{
+    height: 100%;
+    padding: 100px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.stats-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-self: center;
+}
+.stats-quotes{
+    height: 100%;
+    justify-content: center;
+    font-size: 40px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/*-------------What does it do for you two-----------*/
+
+#What-does-it-do-two{
+    padding:150px 0;
+    height: 100vh;
+    width: 100vw;
+}
+.stats{
+    height: 100%;
+    padding: 100px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.stats-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-self: center;
+}
+.stats-quotes{
+    height: 100%;
+    justify-content: center;
+    font-size: 40px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+
+/*-------------our work footer-----------*/
+
+#our-work-footer{
+    padding:200px 0;
+    height: 100vh;
+    width: 100vw;
+}
+.work-text{
+    left: 0;
+    right: 0;
+    padding-top: 200px;
+    justify-content: center;
+    position: absolute;
+}
+.title{
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 25;
+    text-align: center;
+    justify-content: center;
+}
+.button{
+    position: relative;
+
+    display: block;
+    margin: 10px auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    overflow: hidden;
+    font-family: Helvetica;
+    font-weight: normal;
+    border-width: 0;
+    outline: none;
+    border-radius: 25px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    
+    background-color: #ffffff;
+    color: #000000;
+    
+    transition: background-color .3s;
+}
+
+
+@font-face {
+    font-family: HelveticaNeue-Medium;
+    src: local('C:\Users\asrip\OneDrive\Desktop\Snowball Designs\fonts\helvetica-neue-master\HelveticaNeue-Bold.otf');
+}
