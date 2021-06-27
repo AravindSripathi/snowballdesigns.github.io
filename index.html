@@ -1,5 +1,6 @@
 <html>
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>
             SnowBall Designs
@@ -21,19 +22,19 @@
                   <div class="collapse navbar-collapse me-auto" id="navbarNav"  style="justify-content: end; padding-right: 79;">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link mx-3" href="#top" style="color: #00000050;">Home</a> <!----Helvetica neue-->
+                        <a class="nav-link mx-3" href="#top" style="color: #00000085;">Home</a> <!----Helvetica neue-->
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link mx-3" href="#top" style="color: #00000050;">Our Story</a> <!----Helvetica neue-->
+                          <a href="our-story.html" class="nav-link mx-3" style="color: #00000085;">Our Story</a> <!----Helvetica neue-->
                         </li>
                       <li class="nav-item">
-                        <a class="nav-link  mx-3" href="#about-us" style="color: #00000050;">Our Work</a>
+                        <a class="nav-link  mx-3" href="#about-us" style="color: #00000085;">Our Work</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link  mx-3" href="#footer" style="color: #00000050;">Pricing</a>
+                        <a class="nav-link  mx-3" href="price.html" style="color: #00000085;">Pricing</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link  mx-3" href="#footer" style="color: #00000050;">Contact Us</a>
+                        <a class="nav-link  mx-3" href="#footer" style="color: #00000085;">Contact Us</a>
                       </li>
                     </ul>
                   </div>
@@ -44,7 +45,7 @@
         <!--------------Banner---------------------------------------------------------------->
         <div class="container-fluid px-0 banner">
           <div class="row banner">
-                <img src="images/banner.svg" class="img-fluid w-100" style="width: 100vw; height:100vh; object-fit: contain;">
+                <img src="images/banner.svg" class="img-fluid w-100" style="object-fit: contain;">
                 <p class="promo-title">We tailor-make powerful presentation<br> 
                  designs to suit your needs.</p>
                  <p class="promo-quality">24 hour turn around&emsp;&emsp;&emsp;Dedicated representative&emsp;&emsp;&emsp;Flexible pricing terms</p>
@@ -83,17 +84,36 @@
 
         <!--------------our work footer---------------------------------------------------------------->
         <section id="our-work-footer">
-          <div class="container">
+          <div class="container-fluid px-0">
             <div class="row">
-              <img class="img-fluid w-100" src="images/WEBSITEUXBG.svg" style="width: 100vw; height:100vh; object-fit: contain;"/>
+              <img class="img-fluid w-100" src="images/WEBSITEUXBG.svg" style="object-fit: fill;"/>
               <div class="work-text">
                 <h1 class="title">Click here for</h1>
-                <button class="button">Our work</button>
+                <button class="button" onclick="location.href='our-story.html'">Our works</button>
                 </div>
               </div>
+              <span style="position: absolute; bottom: 0px; z-index: 3; justify-content: center; text-align: center; align-content: center; width: 100%;">
+                <div class="row">
+                  <div class="col-md-4">
+                    <p class="company">snowball DESIGNS</p>
+                    </div>
+                  <div class="col-md-2">
+                    <p class="linkedin">LinkedIn</p>
+                    </div>
+                  <div class="col-md-2">
+                    <p class="facebook">Facebook</p>
+                    </div>
+                  <div class="col-md-2">
+                    <p class="request">Request a quote</p>
+                    </div>
+                  <div class="col-md-2">
+                    <p class="contact">Contact Us</p>
+                    </div>
+                </div>
+              </span>
+            </div>
           </section>
           
-
 
         <!------------Smooth Scroll----------->
         <script src="smooth-scroll.js">

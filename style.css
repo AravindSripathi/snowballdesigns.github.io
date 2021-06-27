@@ -110,8 +110,6 @@ body{
 
 #What-does-it-do-two{
     padding:150px 0;
-    height: 100vh;
-    width: 100vw;
 }
 .stats{
     height: 100%;
@@ -143,14 +141,13 @@ body{
 /*-------------our work footer-----------*/
 
 #our-work-footer{
-    padding:200px 0;
-    height: 100vh;
-    width: 100vw;
+    position: relative;
+    padding-top:200px 0;
 }
 .work-text{
     left: 0;
     right: 0;
-    padding-top: 200px;
+    padding-top: 300px;
     justify-content: center;
     position: absolute;
 }
@@ -158,12 +155,13 @@ body{
     font-family: Helvetica;
     font-weight: bold;
     font-size: 25;
+    font-family: Helvetica;
+    font-weight: bold;
     text-align: center;
     justify-content: center;
 }
 .button{
     position: relative;
-
     display: block;
     margin: 10px auto;
     padding-top: 5px;
@@ -183,6 +181,287 @@ body{
     
     transition: background-color .3s;
 }
+
+.footer{
+    width: 100%;
+    height: 70px;
+    z-index: 3000;
+    bottom: 0;
+    left: 0;
+    justify-content: space-evenly;
+    position: absolute;
+    clear: both;
+}
+.company{
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+    border-right: 2px solid white;
+}
+.linkedin{
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+.facebook{
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+.request{
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+.contact{
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/*-------------our work page-----------*/
+#our-story{
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #FFFFFF;
+}
+.title-story{
+    text-align: start;
+    size: 80px;
+    padding-top: 20px;
+    font-family: Helvetica;
+    font-weight: lighter;
+    color: #000;
+}
+.quote-light{
+    text-align: start;
+    font-family: Helvetica;
+    font-weight: lighter;
+    size: 70px;
+    line-height: 5px;
+    margin-left: 5px;
+    padding-top: 30px;
+}
+.quote-bold{
+    text-align: start;
+    font-family: Helvetica;
+    font-weight: bold;
+    line-height: 5px;
+    size: 75px;
+    margin-left: 5px;
+}
+.statement{
+    text-align: start;
+    font-family: Helvetica;
+    font-weight: lighter;
+    line-height: 20px;
+    size: 65px;
+    padding-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.timeline{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 100px;
+}
+.go-to{
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #000;
+    border-right: 2px solid #000;
+}
+.home{
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 15px;
+    height: min-content;
+    background:none;
+    border:none;
+    margin-bottom: 20px;
+    color: #000;
+}
+.our-works{
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 15px;
+    height: min-content;
+    background:none;
+    border:none;
+    margin-bottom: 20px;
+    color: #000;
+}
+.pricing{
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 15px;
+    height: min-content;
+    background:none;
+    border:none;
+    margin-bottom: 20px;
+    color: #000;
+}
+.request-price{
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 15px;
+    height: min-content;
+    background:none;
+    border:none;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/*--------------------------pricing----------------------*/
+#pricing{
+    flex: 1;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+.title-bar{
+    width: 100%;
+}
+.centered {
+    position: absolute;
+    font-family: Helvetica;
+    font-weight: lighter;
+    color: white;
+    font-size: 30px;
+    top: 40px;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+  }
+  .subscription-container{
+      height: 100vh;
+      position: relative;
+      background-color: white;
+      align-self: center;
+      justify-content: center;
+  }
+  .subscription{
+      position: relative;
+      top: 30%;
+      width: min-content;
+      height: 72px;
+      align-content: center;
+      justify-content: center;
+      background-color: white;
+  }
+  .per-slide{
+    position: relative;
+    top: 30%;
+    width: min-content;
+    height: 72px;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+}
+.per-day{
+    position: relative;
+    top: 30%;
+    width: min-content;
+    height: 72px;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+}
+  .subscription-plans{
+    position: relative;
+    padding-left: 10px;
+    width: 169px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius:20px;
+    border: none;
+    text-align: center;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    font-family: Helvetica;
+    font-weight: bold;
+  }
+  .price-quote{
+      position: relative;
+      text-align: center;
+      font-family: Helvetica;
+      font-size: 23px;
+      top: 10%;
+      color: black;
+      align-self: center;
+      font-weight: lighter;
+  }
+  .price-contact{
+    position: relative;
+    text-align: center;
+    height: min-content;
+    font-family: Helvetica;
+    font-size: 23px;
+    background:none;
+    border:none;
+    top: 10%;
+    color: #707070;
+    font-weight: lighter;
+  }
+  .price-contact:hover  {
+    position: relative;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 23px;
+    height: min-content;
+    background:none;
+    border:none;
+    top: 10%;
+    color: black;
+    font-weight: lighter;
+  }
+
+  /*--------------------------contact-us----------------------*/
+#contact-page{
+    flex: 1;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+.address{
+    font-size: 20;
+    font-family: Helvetica;
+    font-weight: lighter;
+    color: #000;
+    padding: 20px;
+    line-height: 20px;
+    border-right: 2px solid #707070;
+}
+.info{
+    font-size: 20;
+    font-family: Helvetica;
+    font-weight: lighter;
+    color: #000;
+    padding: 20px;
+    line-height: 20px;
+}
+.bigger{
+    font-size: 30;
+    font-family: Helvetica;
+    font-weight: normal;
+    color: #000;
+}
+
 
 
 @font-face {
