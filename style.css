@@ -12,7 +12,9 @@ body{
 #nav-bar{
     top: 0;
     z-index: 10;
+    width: 100vw;
     background-color: #ffffff;
+    position: fixed;
 }
 .navbar{
     background-color: #ffffff;
@@ -24,8 +26,7 @@ body{
     background-color: #ff000000;
 }
 .navbar-nav li a{
-    font-family: Helvetica;
-    font-weight: normal;
+    font-family: HelveticaNeueRegular;
     font-size: 20px;
     justify-content:center ;
     align-self: center;
@@ -38,54 +39,78 @@ body{
 
 /*-------------banner section-----------*/
 
-#banner{
-    position: relative;
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .promo-title{
-    position: absolute;
-    align-self: center;
+    position: relative;
     text-align: start;
     color: #FFFFFF;
     left: 30%;
     right: 0;
-    width: fit-content;
-    font-size: 40px;
-    font-family: Helvetica;
-    font-weight: bold;
+    width: 100vw;
+    font-size: 70px;
+    line-height: 90px;
+    font-family:  HelveticaNeueBold;
 }
 .promo-quality{
-    position: absolute;
-    align-self: center;
+    position: relative;
     text-align: start;
     color: #FFFFFF;
     left: 30%;
     bottom: 15%;
+    margin-top: 20px;
     right: 0;
     width: fit-content;
-    font-size: 15px;
-    font-family: Helvetica;
-    font-weight: bold;
+    font-size: 28px;
+    font-family: HelveticaNeueThin;
 }
 
 /*-------------What does it do for you-----------*/
 
 #What-does-it-do{
-    padding:150px 0;
-    height: 100vh;
-    width: 100vw;
+    position:relative; 
+    display: flex; 
+    justify-content: center; 
+    width: 100vw; 
+    height: 100vh; 
+    align-content: center;
+    background-color: black;
 }
-.title{
+.What-it-do{
+    position: absolute;
+    flex: 1;
+    flex-direction: row;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title-what-it-do{
+    position: relative;
     color: #FFFFFF;
-    font-family: Helvetica;
-    font-weight: bold;
-    font-size: 35px;
+    font-size: 70px;
+    line-height: 90px;
+    text-align: center;
+    font-family: HelveticaNeueBold;
+}
+.what-it-do-box{
+    width: 100vw; 
+    position: relative; 
+    margin-top: 50px;
+    display: flex; 
+    flex-direction: row; 
+    justify-self:center; 
+    align-self: center; 
 }
 .stats{
     height: 100%;
-    padding: 100px;
     justify-content: center;
     align-content: center;
     align-items: center;
+    text-align: center;
     vertical-align: middle;
 }
 .stats-image{
@@ -94,46 +119,81 @@ body{
     object-fit: cover;
     justify-content: center;
     align-self: center;
+    margin-left: 50px;
 }
 .stats-quotes{
+    display: flex;
+    flex: 1;
+    width: 100%;
     height: 100%;
     justify-content: center;
-    font-size: 40px;
-    font-family: Helvetica;
-    font-weight: bold;
+    vertical-align: middle;
+    text-align: start;
+    font-size: 70px;
+    line-height: 90px;
+    font-family: HelveticaNeueBold;
     color: white;
-    margin-top: 50px;
+    margin-top: 20%;
     margin-left: 50px;
 }
 
 /*-------------What does it do for you two-----------*/
 
 #What-does-it-do-two{
-    padding:150px 0;
+    position:relative; 
+    display: flex; 
+    justify-content: center; 
+    width: 100vw; 
+    height: 100vh; 
+    align-content: center;
+    background-color: black;
 }
-.stats{
+.What-it-do-two{
+    position: absolute;
+    flex: 1;
+    flex-direction: row;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.what-it-do-box-two{
+    width: 100vw; 
+    position: relative; 
+    margin-top: 50px;
+    display: flex; 
+    flex-direction: row; 
+    justify-self:center; 
+    align-self: center; 
+}
+.stats-two{
     height: 100%;
-    padding: 100px;
     justify-content: center;
     align-content: center;
     align-items: center;
+    text-align: center;
     vertical-align: middle;
 }
-.stats-image{
+.stats-image-two{
     width: 100%;
     height: 100%;
     object-fit: cover;
     justify-content: center;
     align-self: center;
+    margin-left: 50px;
 }
-.stats-quotes{
+.stats-quotes-two{
+    display: flex;
+    flex: 1;
+    width: 100%;
     height: 100%;
     justify-content: center;
-    font-size: 40px;
-    font-family: Helvetica;
-    font-weight: bold;
+    vertical-align: middle;
+    text-align: start;
+    font-size: 70px;
+    line-height: 90px;
+    font-family: HelveticaNeueBold;
     color: white;
-    margin-top: 50px;
+    margin-top: 20%;
     margin-left: 50px;
 }
 
@@ -152,13 +212,11 @@ body{
     position: absolute;
 }
 .title{
-    font-family: Helvetica;
-    font-weight: bold;
-    font-size: 25;
-    font-family: Helvetica;
-    font-weight: bold;
+    font-family: HelveticaNeueBold;
+    font-size: 40;
     text-align: center;
     justify-content: center;
+    color: white;
 }
 .button{
     position: relative;
@@ -169,8 +227,8 @@ body{
     padding-right: 20px;
     padding-left: 20px;
     overflow: hidden;
-    font-family: Helvetica;
-    font-weight: normal;
+    font-family: HelveticaNeueMedium;
+    font-size: 30px;
     border-width: 0;
     outline: none;
     border-radius: 25px;
@@ -193,43 +251,38 @@ body{
     clear: both;
 }
 .company{
-    font-family: Helvetica;
-    font-weight: bold;
+    font-family: HelveticaNeueBold;
     font-size: 30px;
     margin-bottom: 20px;
     color: white;
     border-right: 2px solid white;
 }
 .linkedin{
-    font-family: Helvetica;
-    font-weight: lighter;
+    font-family: HelveticaNeueLight;
     font-size: 20px;
     margin-bottom: 20px;
     color: white;
 }
 .facebook{
-    font-family: Helvetica;
-    font-weight: lighter;
+    font-family: HelveticaNeueLight;
     font-size: 20px;
     margin-bottom: 20px;
     color: white;
 }
 .request{
-    font-family: Helvetica;
-    font-weight: lighter;
+    font-family: HelveticaNeueLight;
     font-size: 20px;
     margin-bottom: 20px;
     color: white;
 }
 .contact{
-    font-family: Helvetica;
-    font-weight: lighter;
+    font-family: HelveticaNeueLight;
     font-size: 20px;
     margin-bottom: 20px;
     color: white;
 }
 
-/*-------------our work page-----------*/
+/*-------------our story page-----------*/
 #our-story{
     position: relative;
     margin-left: 50px;
@@ -238,56 +291,52 @@ body{
 }
 .title-story{
     text-align: start;
-    size: 80px;
+    font-size: 40px;
     padding-top: 20px;
-    font-family: Helvetica;
-    font-weight: lighter;
+    font-family: HelveticaNeueLight;
     color: #000;
 }
 .quote-light{
     text-align: start;
-    font-family: Helvetica;
-    font-weight: lighter;
-    size: 70px;
+    font-family: HelveticaNeueLight;
+    font-size: 30px;
     line-height: 5px;
     margin-left: 5px;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .quote-bold{
     text-align: start;
-    font-family: Helvetica;
-    font-weight: bold;
+    font-family: HelveticaNeueBold;
     line-height: 5px;
-    size: 75px;
+    font-size: 35px;
+    padding-top: 20px;
     margin-left: 5px;
 }
 .statement{
     text-align: start;
-    font-family: Helvetica;
-    font-weight: lighter;
-    line-height: 20px;
-    size: 65px;
+    font-family: HelveticaNeueThin;
+    line-height: 30px;
+    font-size: 30px;
     padding-top: 20px;
     margin-left: 5px;
     margin-right: 5px;
 }
 .timeline{
+    object-fit: contain;
     margin-left: 50px;
     margin-right: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
 }
 .go-to{
-    font-family: Helvetica;
-    font-weight: lighter;
-    font-size: 15px;
+    font-family: HelveticaNeueLight;
+    font-size: 22px;
     margin-bottom: 20px;
     color: #000;
     border-right: 2px solid #000;
 }
 .home{
-    font-family: Helvetica;
-    font-weight: lighter;
-    font-size: 15px;
+    font-family: HelveticaNeueLight;
+    font-size: 22px;
     height: min-content;
     background:none;
     border:none;
@@ -295,9 +344,8 @@ body{
     color: #000;
 }
 .our-works{
-    font-family: Helvetica;
-    font-weight: lighter;
-    font-size: 15px;
+    font-family: HelveticaNeueLight;
+    font-size: 22px;
     height: min-content;
     background:none;
     border:none;
@@ -305,9 +353,8 @@ body{
     color: #000;
 }
 .pricing{
-    font-family: Helvetica;
-    font-weight: lighter;
-    font-size: 15px;
+    font-family: HelveticaNeueLight;
+    font-size: 22px;
     height: min-content;
     background:none;
     border:none;
@@ -315,9 +362,8 @@ body{
     color: #000;
 }
 .request-price{
-    font-family: Helvetica;
-    font-weight: lighter;
-    font-size: 15px;
+    font-family: HelveticaNeueLight;
+    font-size: 22px;
     height: min-content;
     background:none;
     border:none;
@@ -326,19 +372,20 @@ body{
 }
 
 /*--------------------------pricing----------------------*/
-#pricing{
+#pricing-page{
     flex: 1;
     top: 0;
-    z-index: 10;
+    width: 100vw;
+    height: 100vh;
     background-color: white;
 }
 .title-bar{
-    width: 100%;
+    height: 70px;
+    width: 100vw;
 }
 .centered {
     position: absolute;
-    font-family: Helvetica;
-    font-weight: lighter;
+    font-family: HelveticaNeueLight;
     color: white;
     font-size: 30px;
     top: 40px;
@@ -347,7 +394,9 @@ body{
     transform: translate(-50%, -50%);
   }
   .subscription-container{
-      height: 100vh;
+      height: 100%;
+      width: 100%;
+      margin-bottom: -70px;
       position: relative;
       background-color: white;
       align-self: center;
@@ -355,81 +404,135 @@ body{
   }
   .subscription{
       position: relative;
-      top: 30%;
-      width: min-content;
+      top: 120px;
+      width: 160px;
       height: 72px;
-      align-content: center;
-      justify-content: center;
-      background-color: white;
+      margin-right: 30px;
+      align-content: flex-end;
+      justify-self: flex-end;
+      justify-content: flex-end;
   }
   .per-slide{
     position: relative;
-    top: 30%;
-    width: min-content;
+    top: 120px;
     height: 72px;
+    width: 160px;
+    margin-left: 30px;
+    margin-right: 30px;
     align-content: center;
     justify-content: center;
-    background-color: white;
 }
 .per-day{
     position: relative;
-    top: 30%;
-    width: min-content;
+    top: 120px;
     height: 72px;
-    align-content: center;
-    justify-content: center;
-    background-color: white;
+    width: 160px;
+    margin-left: 30px;
+    align-content: flex-start;
+    justify-content: flex-start;
 }
   .subscription-plans{
     position: relative;
+    flex: 1;
     padding-left: 10px;
-    width: 169px;
+    left: 46%;
+    width: 160px;
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius:20px;
-    border: none;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
     text-align: center;
     background-color: black;
     font-size: 20px;
     color: white;
-    font-family: Helvetica;
-    font-weight: bold;
+    font-family: HelveticaNeueBold;
   }
   .price-quote{
       position: relative;
       text-align: center;
-      font-family: Helvetica;
-      font-size: 23px;
-      top: 10%;
+      font-family: HelveticaNeueLight;
+      font-size: 43px;
+      top: 100px;
       color: black;
       align-self: center;
-      font-weight: lighter;
   }
   .price-contact{
     position: relative;
     text-align: center;
     height: min-content;
-    font-family: Helvetica;
-    font-size: 23px;
+    font-family: HelveticaNeueLight;
+    font-size: 43px;
     background:none;
     border:none;
     top: 10%;
     color: #707070;
-    font-weight: lighter;
   }
   .price-contact:hover  {
     position: relative;
     text-align: center;
-    font-family: Helvetica;
+    font-family: HelveticaNeueLight;
     font-size: 23px;
     height: min-content;
     background:none;
     border:none;
     top: 10%;
     color: black;
-    font-weight: lighter;
   }
+
+  .subscriptionPlans{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: white;
+    align-self: center;
+    flex:1;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .subscription-plans-active{
+    position: relative;
+    width: 100vw;
+    flex: 1;
+    top:120px;
+    padding-left: 10px;
+    left: 46%;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius:20px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    background-color: white;
+    font-size: 20px;
+    color: black;
+    font-family: HelveticaNeueBold;
+  }
+  .plans{
+      position: relative;
+      flex:1;
+      top: 200px;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+  .plans-two{
+      position: relative;
+      flex: 1;
+      top: 200px;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .plans-three{
+    position: relative;
+    flex: 1;
+    top: 200px;
+    flex-direction: row;
+    justify-content: center;
+}
 
   /*--------------------------contact-us----------------------*/
 #contact-page{
@@ -439,36 +542,205 @@ body{
     background-color: white;
 }
 .address{
-    font-size: 20;
-    font-family: Helvetica;
-    font-weight: lighter;
+    font-size: 30;
+    font-family: HelveticaNeueLight;
     color: #000;
     padding: 20px;
-    line-height: 25px;
+    line-height: 35px;
+    margin-left: 50px;
     border-right: 2px solid #707070;
 }
 .info{
-    font-size: 20;
-    font-family: Helvetica;
-    font-weight: lighter;
+    font-size: 30;
+    margin-left: 50px;
+    font-family: HelveticaNeueLight;
     color: #000;
     padding: 20px;
-    line-height: 20px;
+    line-height: 30px;
 }
 .bigger{
     font-size: 30;
-    font-family: Helvetica;
-    font-weight: normal;
+    font-family: HelveticaNeueRegular;
     color: #000;
 }
 
   /*--------------------------request-page----------------------*/
-  #request-page{
-    flex: 1;
+  #request-title{
     top: 0;
     z-index: 10;
-    background-color: white;
+    width: 100vw;
+    background-color: #ffffff;
+    position: fixed;
+}
+.request-page{
+    position:relative; 
+    display: flex; 
+    justify-content: center; 
+    align-content: center;
+    background-color: black;
+}
+
+.request-nav{
+    font-family: HelveticaNeueLight;
+    font-size: 30px;
+}
+.request-detail{
+    font-family: HelveticaNeueLight; 
+    font-weight: lighter; 
+    font-size: 34px;
+}
+
+.selected-item{
+    width: 100%; 
+    text-align: center;
+    font-family: HelveticaNeueLight;
+}
+
+.select-wrapper {
+    border-width: 1px; 
+    border-color: black; 
+    border-radius: 56px;
+    margin-left: -10px;
+    height: 50px;  
+    text-align: center; 
+    background-color: white; 
+    flex-direction: row;
+}
+.select {
+    position: relative;
+    display: flex;
+    border-radius: 25px;
+    flex-direction: column;
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    border-color: black;
+}
+.select__trigger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #3b3b3b;
+    height: 50px;
+    line-height: 60px;
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 25px;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: black;
+}
+.custom-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: -1;
+    right: -1;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid black;
+    border-top: 0;
+    background: #fff;
+    transition: all 0s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+}
+.select.open .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+.custom-option {
+    position: relative;
+    display: block;
+    padding: 0 22px 0 22px;
+    font-size: 22px;
+    font-weight: 300;
+    color: #3b3b3b;
+    border-bottom-width: 1px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.custom-option:hover {
+    cursor: pointer;
+    background-color: #b2b2b2;
+    border-radius: 25px;
+}
+.custom-option.selected {
+    color: #000000;
 }
 
 
+.arrow {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    border-radius: 7.5px;
+    border-width: 1px;
+}
+.arrow::before, .arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 0.15rem;
+    height: 100%;
+    transition: all 0.25s;
+}
+.arrow::before {
+    left: -5px;
+    transform: rotate(-45deg);
+    background-color: #000000;
+}
+.arrow::after {
+    left: 5px;
+    transform: rotate(45deg);
+    background-color: #000000;
+}
+.open .arrow::before {
+    left: -5px;
+    transform: rotate(45deg);
+}
+.open .arrow::after {
+    left: 5px;
+    transform: rotate(-45deg);
+}
+
+
+
+
 /*--------------------------our-work----------------------*/
+
+@font-face {
+    font-family: HelveticaNeueBold;
+    src: url("./fonts/helvetica-neue-master/Helvetica\ Neue\ LT\ 75\ Bold.ttf");
+  }
+  @font-face {
+    font-family: HelveticaNeueLight;
+    src: url("./fonts/helvetica-neue-master/Helvetica\ Neue\ LT\ 45\ Light.ttf");
+  }
+  @font-face {
+    font-family: HelveticaNeueMedium;
+    src: url("./fonts/helvetica-neue-master/Helvetica\ Neue\ LT\ 65\ Medium.ttf");
+  }
+  @font-face {
+    font-family: HelveticaNeueRegular;
+    src: url("./fonts/helvetica-neue-master/HelveticaNeue-Regular.otf");
+  }
+  @font-face {
+    font-family: HelveticaNeueRegularItalic;
+    src: url("./fonts/helvetica-neue-master/HelveticaNeue-RegularItalic.otf");
+  }
+  @font-face {
+    font-family: HelveticaNeueThin;
+    src: url("./fonts/helvetica-neue-master/HelveticaNeue-Thin.otf");
+  }
+  @font-face {
+    font-family: HelveticaNeueUltralight;
+    src: url("./fonts/helvetica-neue-master/HelveticaNeue-Ultralight.otf");
+  }

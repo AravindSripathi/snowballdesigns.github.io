@@ -4,68 +4,88 @@
 
 body { font-family: sans-serif; }
 
+.home{
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 15px;
+    height: min-content;
+    background:none;
+    border:none;
+    margin-bottom: 20px;
+    color: #000;
+}
+.our-works{
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 15px;
+    height: min-content;
+    background:none;
+    border:none;
+    margin-bottom: 20px;
+    color: #000;
+}
+.pricing{
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 15px;
+    height: min-content;
+    background:none;
+    border:none;
+    margin-bottom: 20px;
+    color: #000;
+}
+
 .presentation_one{
-  width: 100vw;
-  height: 100vh;
+
   background-image: url('./images/presentation_1/WEBSITEUXBG.png');
 }
 
 .presentation_two{
-  width: 100vw;
-  height: 100vh;
+
   background-image: #ffffff;
 }
 
 .presentation_three{
-  width: 100vw;
-  height: 100vh;
+
   background-image: linear-gradient(to top right, #D5D5D5, #6B6B6B);
 }
 
 .presentation_four{
-  width: 100vw;
-  height: 100vh;
+
   background-color:#969696;
 }
 .presentation_five{
-  width: 100vw;
-  height: 100vh;
+
   background-image: url('./images/presentation_5/WEBSITEUXBG.png');
 }
 .presentation_six{
-  width: 100vw;
-  height: 100vh;
+
   background-color:#ffffff;
 }
 .presentation_seven{
-  width: 100vw;
-  height: 100vh;
+
   background-image: url('./images/presentation_7/WEBSITEUXBG.png');
 }
 .presentation_eight{
-  width: 100vw;
-  height: 100vh;
-  background-image: radial-gradient()(#000000, #ffffff);
+
+  background-color:  #70707065;
+}
+.presentation_nine{
+
+  background-color:  #707070;
 }
 .presentation_ten{
-  width: 100vw;
-  height: 100vh;
+
   background-color:#00000038;
 }
 .presentation_eleven{
-  width: 100vw;
-  height: 100vh;
   background-color:#8B8B8B25;
 }
 .presentation_twelve{
-  width: 100vw;
-  height: 100vh;
   background-color:#ffffff;
 }
 
 .carousel {
-  width: 100vw;
-  height: 100vh;
   background-color: transparent;
 }
 
@@ -123,7 +143,7 @@ body { font-family: sans-serif; }
   width: 60px;
   height: 60px;
   background: transparent;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .flickity-prev-next-button:hover {
   background: transparent;
@@ -143,3 +163,39 @@ body { font-family: sans-serif; }
 .flickity-prev-next-button:disabled {
   display: none;
 }
+
+
+/* position dots up a bit */
+.flickity-page-dots {
+  height: 0px;
+  width: 0px;
+  color: transparent;
+  background: transparent;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 0px;
+  width: 0px;
+  margin: 0;
+  border-radius: 0;
+  color: transparent;
+  background: transparent;
+}
+
+.flickity-page-dots .dot.is-selected {
+  height: 0px;
+  width: 0px;
+  background: transparent;
+}
+@font-face {
+  font-family: HelveticaNeueLight;
+  src: url("./fonts/helvetica-neue-master/Helvetica\ Neue\ LT\ 45\ Light.ttf");
+}
+@font-face {
+  font-family: HelveticaNeueUltralight;
+  src: url("./fonts/helvetica-neue-master/HelveticaNeue-Ultralight.otf");
+}
+
+
+
+

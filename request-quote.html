@@ -12,26 +12,92 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body style="background-color: #fff;">
-        <section id="request-page">
-                <div class="container-fluid px-0 title-bar">
-                    <img class="img-fluid w-100" src="images/title_bar.svg" style="position: absolute;object-fit: contain; background-color: #040404; z-index: 10;"/>
-                    <div class="centered">Request a qoute</div>
-                </div>
-                <div class="row" style="height:100%; justify-content: center; vertical-align: center; align-content: center; background-color: white;">
-                    <div class="row" style="background-color: tomato;">
-                        <div class="col-md-2" ">Name</div>
-                            <textarea id=" "col-md-2 name-area" name="name-area" rows="1" style="border-radius: 1px; border-color: black; border-radius: 25px;">
-
-                            </textarea>
-                    </div>
-                    <div class="row" style="background-color: teal; ">
-                        <div class="col-md-2">Name</div>    
-                            <textarea id=""col-md-2 name-area" name="name-area" rows="1" style="border-radius: 1px; border-color: black; border-radius: 25px;">
-
-                            </textarea>
-                    </div>
-                
-                </div>  
+        <section id="request-title">
+            <img class="img-fluid w-100" src="images/title_bar.svg" style="position: absolute; object-fit: contain; background-color: #040404; z-index: 10; justify-content: center; vertical-align: middle; height: 70px;"/>
+            <div class="request-nav centered">Request a qoute</div>
         </section>
+        <section id="request-page">
+        <img class="back-arrow" src="images/Back arrow.png" onclick="goBack()" style="position: absolute; object-fit: contain; height: 50; width: 50; top: 100px; left:5%;"/>
+        <div id="request-page-item" style="position: absolute; height: 50vh; width: 100vw; top: 35%; left: 30%;">
+            <ul class="row">
+                <label class="request-detail col-md-3">Name</label>
+                <input class="col-md-2" type="text" id="name" style="border-width: 1px; border-color: black; border-radius: 56px; height: 50px; width: 15%; text-align: center;">
+            </ul>
+            <ul class="row">
+                <label class="request-detail col-md-3">Company name</label>
+                <input class="col-md-2" type="text" id="name" style="border-width: 1px; border-color: black; border-radius: 56px; height: 50px;  width: 15%; text-align: center;">
+            </ul>
+            <ul class="row">
+                <label class="request-detail col-md-3">E-mail ID</label>
+                <input class="col-md-2" type="text" id="name" style="border-width: 1px; border-color: black; border-radius: 56px; height: 50px;  width: 15%;  text-align: center;">
+            </ul>
+            <ul class="row">
+                <label class="request-detail col-md-3">Contact number</label>
+                <input class="col-md-2" type="text" id="name" style="border-width: 1px; border-color: black; border-radius: 56px; height: 50px;  width: 15%;  text-align: center;">
+            </ul>
+            <ul class="row">
+                <label class="request-detail col-md-3">Plan</label>
+                    <!-- <button style="border-width: 1px; border-color: black; border-radius: 56px; height: 50px;  width: 15%;  text-align: center; background-color: transparent; flex-direction: row;">
+                        <img class="dropDownImg" src="./images/Drop down.svg" style="align-self: flex-end; position: absolute ; top:43% ; right: 60%;"/>
+                        </button> -->
+                        <div class="select-wrapper col-md-2">
+                            <div class="select" id="side">
+                                <div class="select__trigger" id="side_one"><span class="selected-item">Subscription plan</span>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="custom-options">
+                                    <span class="custom-option selected">Subscription plan</span>
+                                    <span class="custom-option">Per Day plan</span>
+                                    <span class="custom-option">Per Slide plan</span>
+                                </div>
+                            </div>
+                        </div>
+            </ul>
+        </div>
+        </section>
+        <script>
+            var toggle = true;
+            document.querySelector('.select-wrapper').addEventListener('click', function() {
+                this.querySelector('.select').classList.toggle('open');
+                if(toggle){
+                    document.getElementById("side").style.borderBottomLeftRadius = "0px";
+                    document.getElementById("side_one").style.borderBottomLeftRadius = "0px"; 
+                    document.getElementById("side").style.borderBottomRightRadius = "0px"; 
+                    document.getElementById("side_one").style.borderBottomRightRadius = "0px";
+                    document.getElementById("side_one").style.borderBottomWidth = "0px";
+                    toggle = false;
+                }
+                else{
+                    document.getElementById("side").style.borderBottomLeftRadius = "25px";
+                    document.getElementById("side_one").style.borderBottomLeftRadius = "25px"; 
+                    document.getElementById("side").style.borderBottomRightRadius = "25px"; 
+                    document.getElementById("side_one").style.borderBottomRightRadius = "25px";
+                    document.getElementById("side_one").style.borderBottomWidth = "1px";
+                    toggle = true;
+                }
+            })
+            for (const option of document.querySelectorAll(".custom-option")) {
+                option.addEventListener('click', function() {
+                    if (!this.classList.contains('selected')) {
+                        this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
+                        this.classList.add('selected');
+                        this.closest('.select').querySelector('.select__trigger span').textContent = this.textContent;
+                    }
+                })
+            }
+            
+            window.addEventListener('click', function(e) {
+                const select = document.querySelector('.select')
+                if (!select.contains(e.target)) {
+                    // select.classList.remove('open');
+                }
+            });
+
+            function goBack() {
+                window.history.back()
+            }
+
+        </script>
+
         </body>
         </html>

@@ -12,25 +12,150 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body style="background-color: #fff;">
-        <section id="pricing">
-                <div class="container-fluid px-0 title-bar">
-                    <img class="img-fluid w-100" src="images/title_bar.svg" style="position: absolute;object-fit: contain; background-color: #040404; z-index: 10;"/>
+        <section id="pricing-page">
+            <div class="container-fluid px-0" style="flex:1; flex-direction: row;">
+                <div class="title-bar">
+                    <img class="img-fluid w-100" src="images/title_bar.svg" style="position: absolute;object-fit: contain; background-color: #040404; z-index: 10; height: 79px;"/>
                     <div class="centered">Pricing</div>
-                    <div class="row px-0 subscription-container">
-                        <div class="col-md-2 subscription">
-                            <button class="subscription-plans  shadow-none">Subscription<br>Plans</button> 
-                        </div>  
-                        <div class="col-md-2 per-slide">
-                            <button class="subscription-plans shadow-none">Per slide<br>Plans</button>
-                        </div>
-                        <div class="col-md-2 per-day">
-                            <button class="subscription-plans  shadow-none">Per day<br>Plans</button>   
+                </div>
+                    <div class="container-fluid row px-0 subscription-container" id="mainPlan">
+                        <div class="row" style="width: 50vw; margin-left: -125px;">
+                            <div class="col subscription">
+                                <button class="subscription-plans  shadow-none" onclick="buttonSubscription()">Subscription<br>Plans</button> 
+                            </div>  
+                            <div class="col per-slide">
+                                <button class="subscription-plans shadow-none" onclick="slideSubscription()">Per slide<br>Plans</button>
+                            </div>
+                            <div class="col per-day">
+                                <button class="subscription-plans  shadow-none" onclick="daySubscription()">Per day<br>Plans</button>   
+                            </div>
                         </div>
                         <div class="price-quote">Don’t believe until you try. The first 5 slides that you buy are on us</div>
                         <button class="price-contact" onclick="location.href='contact.html'">Need a pricing plan other than the above ? Contact us</button>   
                     </div>
 
-                </div>
-        </section>
-        </body>
-        </html>
+                    <!----------------------------Subscription Plan----------------------------------------------->
+
+                    <div class="px-0 subscriptionPlans" style="display: none;"  id="subscriptionButton">
+                        <img class="back-arrow" src="images/Back arrow.png" onclick="goBack()" style="position: absolute;object-fit: contain; height: 50; width: 50; top: 30px; left:5%;"/>
+                        <button class="col-md-1 subscription-plans-active  shadow-none">Subscription<br>Plans</button> 
+                        <div class="row px-0 plans">
+                            <div class="col-md-2">
+                                <h1 style="font-family: HelveticaNeueRegular; font-size: 40px; line-height: 25px;">Monthly plan</h1>
+                                <p style="font-family: HelveticaNeueRegular; font-size: 20px;">Validity: 30 days<br>Slides: 100 slides<br>Price: ₹ 7,500<br>Additional: ₹ 120/slide</p>
+                            </div>  
+                            <div class="col-md-2">
+                                <h1 style="font-family: HelveticaNeueRegular; font-size: 40px; line-height: 25px;">Quarterly plan</h1>
+                                <p style="font-family: HelveticaNeueRegular; font-size: 20px;">Validity: 3 months<br> Slides: 300 slides<br> Price: ₹ 13,500<br> Additional: ₹ 100/slide
+                                    </p>
+                            </div>
+                            <div class="col-md-2">
+                                <h1 style="font-family: HelveticaNeueRegular; font-size: 40px; line-height: 25px;">Yearly plan</h1>
+                                <p style="font-family: HelveticaNeueRegular; font-size: 20px; ">Validity: 1 year<br>Slides: 1200 slides<br>Price: ₹ 36,000<br>Additional: ₹ 75/slide</p>                           
+                                </div>
+                            </div>
+                            <div style="position:relative; flex:1; top:300px; text-align: center; font-size: 15px; font-family: Helvetica; font-weight: normal;">*prices shown are excluding any applicable taxes. Subscriptions can be canceled with a 10% charge</div>
+                        </div>
+
+                        <!---------------------------Quarterly plan----------------------------------------------->
+                        <div class="px-0 subscriptionPlans" style="display: none;"  id="slideButton">
+                            <img class="back-arrow" src="images/Back arrow.png" onclick="goBack()" style="position: absolute;object-fit: contain; height: 50; width: 50; top: 30px; left:5%;"/>
+                            <button class="col-md-1 subscription-plans-active  shadow-none">Per slide<br>Plans</button> 
+                            <div class="row px-0 plans-two">
+                                <div class="col-md-4">
+                                    <h1 style="font-family: HelveticaNeueRegular; font-size: 40px; line-height: 25px; text-align: center;">₹ 350/slide up to 10 slides</h1>
+                                    <p style="font-family: HelveticaNeueRegular; font-size: 20px;  text-align: center;">₹300/slide from the 11th slide</p>
+                                </div>
+                                <div style="position:relative; width: 100vw; top:100px; text-align: center; font-size: 15px; font-family: Helvetica; font-weight: normal;">*prices shown are excluding any applicable taxes</div>
+                            </div>
+                            </div>
+
+
+                        <!---------------------------Yearly plan----------------------------------------------->
+                            <div class="px-0 subscriptionPlans" style="display: none;"   id="dayButton">
+                                <img class="back-arrow" src="images/Back arrow.png" onclick="goBack()" style="position: absolute;object-fit: contain; height: 50; width: 50; top: 30px; left:5%;"/>
+                                <button class="col-md-1 subscription-plans-active  shadow-none">Per day<br>Plans</button> 
+                                <div class="row px-0 plans-three">
+                                    <div class="col-md-4">
+                                        <h1 style="font-family: HelveticaNeueRegular; font-size: 40px; line-height: 25px; text-align: center;">₹ 1500/day of 8 hrs</h1>
+                                        <p style="font-family: HelveticaNeueRegular; font-size: 20px;  text-align: center;">₹100/hr after 8 hrs</p>
+                                    </div>
+                                    <div style="position:relative; width: 100vw; top:100px; text-align: center; font-size: 15px; font-family: Helvetica; font-weight: normal;">*prices shown are excluding any applicable taxes</div>
+                                </div>
+                                </div>
+                                
+                                <span style="position: absolute; bottom: 0px; z-index: 3; justify-content: center; text-align: center; align-content: center; width: 100%; display: none;" id="bottomTab">
+                                    <div class="row" style="justify-content: flex-end; margin-right: 15%;">
+                                      <div class="col-md-2">
+                                        <button class="requestquote"
+                                        style="font-family: HelveticaNeueLight;
+                                        font-size: 20px;
+                                        height: min-content;
+                                        background:none;
+                                        border:none;
+                                        margin-bottom: 20px;
+                                        color: #000;"
+                                        onclick="location.href='request-quote.html'">Request a qoute</button>
+                                        </div>
+                                    <div class="col-md-1">
+                                        <button class="contactus"style="font-family: HelveticaNeueLight;
+                                        font-size: 20px;
+                                        height: min-content;
+                                        background:none;
+                                        border:none;
+                                        margin-bottom: 20px;
+                                        color: #000;"
+                                        onclick="location.href='contact.html'">Contact Us</button>
+                                        </div>
+                                    </div>
+                                  </span> 
+                    </section>
+                    <script>
+                        function goBack() {
+                            var  y = document.getElementById("mainPlan");
+                            if(y.style.display == "none"){
+                                y.style.display = ""
+                                var x = document.getElementById("subscriptionButton");
+                                x.style.display = "none"
+                                x = document.getElementById("slideButton");
+                                x.style.display = "none"   
+                                x = document.getElementById("dayButton");
+                                x.style.display = "none"   
+                                x = document.getElementById("bottomTab");
+                                x.style.display = "none"
+                            }
+                            else{
+                                window.history.back()
+                            }
+                        }
+
+                        function buttonSubscription(){
+                            var  y = document.getElementById("mainPlan");
+                            y.style.display = "none"
+                            var x = document.getElementById("subscriptionButton");
+                            x.style.display = ""
+                            x = document.getElementById("bottomTab");
+                            x.style.display = ""           
+                        }
+
+                        function slideSubscription(){
+                            var  y = document.getElementById("mainPlan");
+                            y.style.display = "none"
+                            var x = document.getElementById("slideButton");
+                            x.style.display = ""
+                            x = document.getElementById("bottomTab");
+                            x.style.display = ""           
+                        }
+
+                        function daySubscription(){
+                            var  y = document.getElementById("mainPlan");
+                            y.style.display = "none"
+                            var x = document.getElementById("dayButton");
+                            x.style.display = ""
+                            x = document.getElementById("bottomTab");
+                            x.style.display = ""           
+                        }
+
+                        </script>
+                </body>
+                </html>

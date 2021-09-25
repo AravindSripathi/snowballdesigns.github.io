@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 80 80">
+  <g id="Drop_down" data-name="Drop down" transform="translate(-2325 -1382)">
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(2325 1382)" stroke="#000" stroke-width="8">
+      <circle cx="40" cy="40" r="40" stroke="none"/>
+      <circle cx="40" cy="40" r="36" fill="none"/>
+    </g>
+    <g id="Arrow" transform="translate(2339.845 1409.242)">
+      <rect id="Rectangle_32" data-name="Rectangle 32" width="37.349" height="2.334" transform="translate(23.828 27.315) rotate(-47)" fill="#fff"/>
+      <rect id="Rectangle_33" data-name="Rectangle 33" width="37.349" height="2.334" transform="translate(1.707 0) rotate(47)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
