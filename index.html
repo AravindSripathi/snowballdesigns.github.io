@@ -15,26 +15,29 @@
         <section id="nav-bar">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img src="images/Logo.svg" style="height: fit-content; width: fit-content;"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse me-auto" id="navbarNav"  style="justify-content: end; padding-right: 79;">
+                  <a class="navbar-brand" href="#">
+                    <img src="images/Website-contents.jpg">
+                    <div class="company" >
+                      <span class="snow">snowball</span>
+                      <span class="ball">DESIGNS</span>
+                    </div>
+                  </a>
+                  <div class="collapse navbar-collapse me-auto" id="navbarNav"  style="justify-content: end; padding-right: 79px;">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link mx-3" href="#top" style="color: #00000050; font-family: HelveticaNeueMedium;">Home</a> <!----Helvetica neue-->
+                        <button class="nav-link mx-3" onclick="javascript:location.href='#top'">Home</button> <!----Helvetica neue-->
                       </li>
                       <li class="nav-item">
-                          <a href="our-story.html" class="nav-link mx-3" style="color: #00000050; font-family: HelveticaNeueMedium;">Our Story</a> <!----Helvetica neue-->
+                          <button class="nav-link mx-3" onclick="javascript:location.href='./our-story.html'">Our Story</p> <!----Helvetica neue-->
                         </li>
                       <li class="nav-item">
-                        <a class="nav-link  mx-3" href="our_work.html" style="color: #00000050; font-family: HelveticaNeueMedium;">Our Work</a>
+                        <button class="nav-link  mx-3" onclick="javascript:location.href='./our_work.html'">Our Work</button>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link  mx-3" href="price.html" style="color: #00000050; font-family: HelveticaNeueMedium;">Pricing</a>
+                        <button class="nav-link  mx-3" onclick="javascript:location.href='./price.html'">Pricing</button>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link  mx-3" href="contact.html" style="color: #00000050; font-family: HelveticaNeueMedium;">Contact Us</a>
+                        <button class="nav-link  mx-3" onclick="javascript:location.href='./contact.html'">Contact Us</button>
                       </li>
                     </ul>
                   </div>
@@ -87,27 +90,27 @@
           <div class="container-fluid px-0">
             <div class="row">
               <img class="img-fluid w-100" src="images/WEBSITEUXBG.svg" style="object-fit: fill;"/>
-              <div class="work-text" style="top:15%">
+              <div class="work-text">
                 <h1 class="title">Click here for</h1>
                 <button class="button" onclick="location.href='our-story.html'">Our works</button>
                 </div>
               </div>
               <span style="position: absolute; bottom: 0px; z-index: 3; justify-content: center; text-align: center; align-content: center; width: 100%;">
                 <div class="row">
-                  <div class="col-md-4">
-                    <p class="company">snowball DESIGNS</p>
+                  <!-- <div class="col-md-4">
+                    <button class="company" style="background: none; border:none;">snowball DESIGNS</button>
+                    </div> -->
+                  <div class="col-md-3">
+                    <button class="linkedin" style="background: none; border:none;">LinkedIn</button>
                     </div>
-                  <div class="col-md-2">
-                    <p class="linkedin">LinkedIn</p>
+                  <div class="col-md-3">
+                    <button class="facebook" style="background: none; border:none;">Facebook</button>
                     </div>
-                  <div class="col-md-2">
-                    <p class="facebook">Facebook</p>
+                  <div class="col-md-3">
+                    <button class="request" onclick="location.href='request-quote.html'" style="background: none; border:none;">Request a quote</button>
                     </div>
-                  <div class="col-md-2">
-                    <p class="request" onclick="location.href='request-quote.html'">Request a quote</p>
-                    </div>
-                  <div class="col-md-2">
-                    <p class="contact" onclick="location.href='contact.html'">Contact Us</p>
+                  <div class="col-md-3">
+                    <button class="contact" onclick="location.href='contact.html'" style="background: none; border:none;">Contact Us</button>
                     </div>
                 </div>
               </span>

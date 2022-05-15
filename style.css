@@ -17,12 +17,38 @@ body{
     position: fixed;
 }
 .navbar{
+    height: 70px;
     background-color: #ffffff;
     padding: 0 !important;
 }
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+}
+
+.company{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.snow{
+    font-family: HelveticaNeueThin;
+    font-size: 30px;
+    margin-left: 20px;
+    color: black;
+}
+.ball{
+    font-family: HelveticaNeueBold;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 3px;
+    color: black;
+}
+
 .navbar-brand img{
     height: 56px;
-    padding-left: 79px;
+    padding-left: 30px;
     background-color: #ff000000;
 }
 .navbar-nav li a{
@@ -33,9 +59,23 @@ body{
     float: right;
     text-align: left;
 }
-.navbar-toggler{
-    outline: none;
+.nav-link{
+    color: #838383;
+    font-size: 24px;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    font-family: HelveticaNeueMedium;
 }
+.nav-link:hover{
+    color: #000000;
+    font-size: 24px;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    font-family: HelveticaNeueMedium;
+}
+
 
 /*-------------banner section-----------*/
 
@@ -205,10 +245,8 @@ body{
     padding-top:200px 0;
 }
 .work-text{
-    left: 0;
-    right: 0;
-    padding-top: 300px;
-    justify-content: center;
+    justify-self: center;
+    align-self: center;
     position: absolute;
 }
 .title{
@@ -250,13 +288,7 @@ body{
     position: absolute;
     clear: both;
 }
-.company{
-    font-family: HelveticaNeueBold;
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: white;
-    border-right: 2px solid white;
-}
+
 .linkedin{
     font-family: HelveticaNeueLight;
     font-size: 20px;
@@ -302,7 +334,7 @@ body{
     font-size: 30px;
     line-height: 5px;
     margin-left: 5px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .quote-bold{
     text-align: start;
@@ -316,8 +348,8 @@ body{
     text-align: start;
     font-family: HelveticaNeueThin;
     line-height: 30px;
-    font-size: 30px;
-    padding-top: 20px;
+    font-size: 25px;
+    padding-top: 30px;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -325,18 +357,18 @@ body{
     object-fit: contain;
     margin-left: 50px;
     margin-right: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 .go-to{
     font-family: HelveticaNeueLight;
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 20px;
     color: #000;
     border-right: 2px solid #000;
 }
 .home{
     font-family: HelveticaNeueLight;
-    font-size: 22px;
+    font-size: 18px;
     height: min-content;
     background:none;
     border:none;
@@ -345,7 +377,7 @@ body{
 }
 .our-works{
     font-family: HelveticaNeueLight;
-    font-size: 22px;
+    font-size: 18px;
     height: min-content;
     background:none;
     border:none;
@@ -354,7 +386,7 @@ body{
 }
 .pricing{
     font-family: HelveticaNeueLight;
-    font-size: 22px;
+    font-size: 18px;
     height: min-content;
     background:none;
     border:none;
@@ -363,7 +395,7 @@ body{
 }
 .request-price{
     font-family: HelveticaNeueLight;
-    font-size: 22px;
+    font-size: 18px;
     height: min-content;
     background:none;
     border:none;
@@ -375,13 +407,13 @@ body{
 #pricing-page{
     flex: 1;
     top: 0;
-    width: 100vw;
-    height: 100vh;
     background-color: white;
 }
 .title-bar{
     height: 70px;
     width: 100vw;
+    position: absolute;
+    top:0;
 }
 .centered {
     position: absolute;
@@ -474,7 +506,7 @@ body{
     position: relative;
     text-align: center;
     font-family: HelveticaNeueLight;
-    font-size: 23px;
+    font-size: 43px;
     height: min-content;
     background:none;
     border:none;
@@ -483,8 +515,8 @@ body{
   }
 
   .subscriptionPlans{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: white;
     align-self: center;
@@ -494,7 +526,7 @@ body{
   }
   .subscription-plans-active{
     position: relative;
-    width: 100vw;
+    width: 100%;
     flex: 1;
     top:120px;
     padding-left: 10px;
@@ -594,17 +626,6 @@ body{
     width: 100%; 
     text-align: center;
     font-family: HelveticaNeueLight;
-}
-
-.select-wrapper {
-    border-width: 1px; 
-    border-color: black; 
-    border-radius: 56px;
-    margin-left: -10px;
-    height: 50px;  
-    text-align: center; 
-    background-color: white; 
-    flex-direction: row;
 }
 .select {
     position: relative;

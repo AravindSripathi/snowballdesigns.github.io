@@ -5,9 +5,8 @@
 body { font-family: sans-serif; }
 
 .home{
-    font-family: Helvetica;
-    font-weight: lighter;
-    font-size: 15px;
+    font-family: HelveticaNeueLight;
+    font-size: 20px;
     height: min-content;
     background:none;
     border:none;
@@ -15,9 +14,8 @@ body { font-family: sans-serif; }
     color: #000;
 }
 .our-works{
-    font-family: Helvetica;
-    font-weight: lighter;
-    font-size: 15px;
+    font-family: HelveticaNeueLight;
+    font-size: 20px;
     height: min-content;
     background:none;
     border:none;
@@ -25,9 +23,8 @@ body { font-family: sans-serif; }
     color: #000;
 }
 .pricing{
-    font-family: Helvetica;
-    font-weight: lighter;
-    font-size: 15px;
+    font-family: HelveticaNeueLight;
+    font-size: 20px;
     height: min-content;
     background:none;
     border:none;
@@ -36,23 +33,19 @@ body { font-family: sans-serif; }
 }
 
 .presentation_one{
-
-  background-image: url('./images/presentation_1/WEBSITEUXBG.png');
+  background-image: linear-gradient(to top right, #D5D5D5, #d1d1d1);
 }
 
 .presentation_two{
-
-  background-image: #ffffff;
+  background-image: url('./images/presentation_1/WEBSITEUXBG.png');
 }
 
 .presentation_three{
-
-  background-image: linear-gradient(to top right, #D5D5D5, #6B6B6B);
+  background-image: #ffffff;
 }
-
 .presentation_four{
 
-  background-color:#969696;
+  background-image: url('./images/presentation_7/WEBSITEUXBG.png');
 }
 .presentation_five{
 
@@ -64,7 +57,7 @@ body { font-family: sans-serif; }
 }
 .presentation_seven{
 
-  background-image: url('./images/presentation_7/WEBSITEUXBG.png');
+  background-color:#969696;
 }
 .presentation_eight{
 
@@ -151,14 +144,14 @@ body { font-family: sans-serif; }
 }
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: white;
+  fill: black;
 }
 .flickity-prev-next-button.no-svg {
-  color: white;
+  color: black;
 }
 /* closer to edge */
-.flickity-prev-next-button.previous { left: 0; }
-.flickity-prev-next-button.next { right: 0; }
+.flickity-prev-next-button.previous { left: 0; bottom: 50;}
+.flickity-prev-next-button.next { right: 0; bottom: 50; }
 /* hide disabled button */
 .flickity-prev-next-button:disabled {
   display: none;
@@ -181,6 +174,7 @@ body { font-family: sans-serif; }
   color: transparent;
   background: transparent;
 }
+
 
 .flickity-page-dots .dot.is-selected {
   height: 0px;

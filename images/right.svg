@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112">
+  <g id="right" transform="translate(0 112) rotate(-90)">
+    <g id="Component_22_1" data-name="Component 22 – 1">
+      <g id="Polygon_2" data-name="Polygon 2" transform="translate(93 100) rotate(180)" fill="#fff" opacity="0.327">
+        <path d="M 75.12851715087891 64.5 L 0.8714854121208191 64.5 L 38 0.9906986951828003 L 75.12851715087891 64.5 Z" stroke="none"/>
+        <path d="M 38 1.981395721435547 L 1.742973327636719 64 L 74.25702667236328 64 L 38 1.981395721435547 M 38 0 L 76 65 L 0 65 L 38 0 Z" stroke="none" fill="#707070"/>
+      </g>
+      <g id="Ellipse_4" data-name="Ellipse 4" fill="none" stroke="#fff" stroke-width="2" opacity="0.327">
+        <circle cx="56" cy="56" r="56" stroke="none"/>
+        <circle cx="56" cy="56" r="55" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

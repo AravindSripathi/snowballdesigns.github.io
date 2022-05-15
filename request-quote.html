@@ -17,7 +17,9 @@
             <div class="request-nav centered">Request a qoute</div>
         </section>
         <section id="request-page">
-        <img class="back-arrow" src="images/Back arrow.png" onclick="goBack()" style="position: absolute; object-fit: contain; height: 50; width: 50; top: 100px; left:5%;"/>
+        <button onclick="goBack()">
+            <img class="back-arrow" src="images/Back arrow.png" style="position: absolute; object-fit: contain; height: 50; width: 50; top: 100px; left:5%;"/>
+        </button>
         <div id="request-page-item" style="position: absolute; height: 50vh; width: 100vw; top: 35%; left: 30%;">
             <ul class="row">
                 <label class="request-detail col-md-3">Name</label>
@@ -40,7 +42,7 @@
                     <!-- <button style="border-width: 1px; border-color: black; border-radius: 56px; height: 50px;  width: 15%;  text-align: center; background-color: transparent; flex-direction: row;">
                         <img class="dropDownImg" src="./images/Drop down.svg" style="align-self: flex-end; position: absolute ; top:43% ; right: 60%;"/>
                         </button> -->
-                        <div class="select-wrapper col-md-2">
+                        <div class="select-wrapper col-md-2" style="border-width: 1px; border-color: black; border-radius: 56px; height: 50px;  width: 16%;  text-align: center; margin-left: -10px;">
                             <div class="select" id="side">
                                 <div class="select__trigger" id="side_one"><span class="selected-item">Subscription plan</span>
                                     <div class="arrow"></div>
