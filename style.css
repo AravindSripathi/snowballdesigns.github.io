@@ -611,21 +611,29 @@ body{
     align-content: center;
     background-color: black;
 }
-
 .request-nav{
     font-family: HelveticaNeueLight;
     font-size: 30px;
 }
 .request-detail{
     font-family: HelveticaNeueLight; 
-    font-weight: lighter; 
+    font-weight: 600; 
+    color: #000000;
     font-size: 34px;
+}
+
+.detail{
+    font-family: HelveticaNeueLight; 
+    font-weight: 600; 
+    color: #000000;
 }
 
 .selected-item{
     width: 100%; 
     text-align: center;
+    font-weight: 600;
     font-family: HelveticaNeueLight;
+    color: #000000;
 }
 .select {
     position: relative;
@@ -681,8 +689,9 @@ body{
     display: block;
     padding: 0 22px 0 22px;
     font-size: 22px;
-    font-weight: 300;
-    color: #3b3b3b;
+    font-weight: 600;
+    font-family: HelveticaNeueLight;
+    color: #000000;
     border-bottom-width: 1px;
     line-height: 60px;
     cursor: pointer;
