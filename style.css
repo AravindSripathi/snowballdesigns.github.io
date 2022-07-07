@@ -79,12 +79,6 @@ body{
 
 /*-------------banner section-----------*/
 
-.banner{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 .promo-title{
     position: relative;
     text-align: start;
