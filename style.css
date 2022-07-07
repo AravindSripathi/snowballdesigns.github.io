@@ -78,11 +78,13 @@ body{
 
 
 /*-------------banner section-----------*/
-.banner{
-    background-color: transparent;
-    flex-direction: row;
-}
 
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .promo-title{
     position: relative;
     text-align: start;
@@ -90,7 +92,7 @@ body{
     left: 30%;
     right: 0;
     width: 100vw;
-    font-size: 70px;
+    font-size: 100vw*0.4;
     line-height: 90px;
     font-family:  HelveticaNeueBold;
 }
