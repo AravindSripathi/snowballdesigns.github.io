@@ -85,34 +85,17 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-@media (min-width: 1080px){
-    .promo-title{
-        position: relative;
-        text-align: start;
-        color: #FFFFFF;
-        left: 30%;
-        right: 0;
-        width: 100vw;
-        font-size: 70px;
-        line-height: 90px;
-        font-family:  HelveticaNeueBold;
-    }
+.promo-title{
+    position: relative;
+    text-align: start;
+    color: #FFFFFF;
+    left: 30%;
+    right: 0;
+    width: 100vw;
+    font-size: 100vw*0.4;
+    line-height: 90px;
+    font-family:  HelveticaNeueBold;
 }
-
-@media (min-width: 720px){
-    .promo-title{
-        position: relative;
-        text-align: start;
-        color: #FFFFFF;
-        left: 30%;
-        right: 0;
-        width: 100vw;
-        font-size: 50px;
-        line-height: 90px;
-        font-family:  HelveticaNeueBold;
-    }
-}
-
 .promo-quality{
     position: relative;
     text-align: start;
