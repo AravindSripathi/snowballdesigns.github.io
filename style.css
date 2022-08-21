@@ -92,30 +92,10 @@ body{
     left: 30%;
     right: 0;
     width: 100vw;
-    font-size: 70px;
+    font-size: calc(100% + 1vw + 1vh);
     line-height: 90px;
     font-family:  HelveticaNeueBold;
 }
-
-@media (min-width: 544px) {  
-    promo-title {font-size:1.5rem;} /*1rem = 16px*/
-  }
-   
-  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-  @media (min-width: 768px) {  
-    promo-title {font-size:2rem;} /*1rem = 16px*/
-  }
-   
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) { 
-    promo-title {font-size:2.5rem;} /*1rem = 16px*/
-  }
-   
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {  
-    promo-title {font-size:3rem;} /*1rem = 16px*/    
-  }
-
 .promo-quality{
     position: relative;
     text-align: start;
