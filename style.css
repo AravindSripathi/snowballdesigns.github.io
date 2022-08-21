@@ -90,6 +90,7 @@ body{
     width: 100vw;
     font-size: 2.2vw;
     line-height: 90px;
+    justify-self: center;
     align-self: center;
     font-family:  HelveticaNeueBold;
 }
