@@ -79,6 +79,10 @@ body{
 
 /*-------------banner section-----------*/
 
+.banner{
+    align-self: center;
+    background-color: red;
+}
 .promo-title{
     position: relative;
     text-align: start;
