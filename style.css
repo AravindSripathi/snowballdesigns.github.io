@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 *
 {
     margin: 0;
@@ -80,30 +82,33 @@ body{
 /*-------------banner section-----------*/
 
 .banner{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
 }
 .promo-title{
     position: relative;
-    text-align: start;
+    text-align: center;
     color: #FFFFFF;
     width: 100vw;
-    font-size: 2.2vw;
+    font-size: 3.2vw;
     line-height: 90px;
     font-family:  HelveticaNeueBold;
 }
 .promo-quality{
     position: relative;
-    text-align: start;
+    text-align: center;
     color: #FFFFFF;
-    left: 30%;
-    bottom: 15%;
+    width: 100vw;
     margin-top: 20px;
     right: 0;
-    width: fit-content;
-    font-size: 28px;
+    font-size: 1.6vw;
     font-family: HelveticaNeueThin;
 }
 
@@ -129,7 +134,7 @@ body{
 .title-what-it-do{
     position: relative;
     color: #FFFFFF;
-    font-size: 70px;
+    font-size: 4.0vw;
     line-height: 90px;
     text-align: center;
     font-family: HelveticaNeueBold;
@@ -167,12 +172,10 @@ body{
     justify-content: center;
     vertical-align: middle;
     text-align: start;
-    font-size: 70px;
-    line-height: 90px;
+    font-size: 4.0vw;
     font-family: HelveticaNeueBold;
     color: white;
     margin-top: 20%;
-    margin-left: 50px;
 }
 
 /*-------------What does it do for you two-----------*/
@@ -187,17 +190,15 @@ body{
     background-color: black;
 }
 .What-it-do-two{
-    position: absolute;
-    flex: 1;
-    flex-direction: row;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
 }
 .what-it-do-box-two{
     width: 100vw; 
     position: relative; 
-    margin-top: 50px;
     display: flex; 
     flex-direction: row; 
     justify-self:center; 
@@ -212,12 +213,19 @@ body{
     vertical-align: middle;
 }
 .stats-image-two{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 60vw;
+    height: 40vh;
+    margin-left: 3vw;
+    object-fit: fill;
     justify-content: center;
     align-self: center;
-    margin-left: 50px;
+}
+.stats-two{
+    position: relative; 
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    align-self: center; 
 }
 .stats-quotes-two{
     display: flex;
@@ -227,12 +235,11 @@ body{
     justify-content: center;
     vertical-align: middle;
     text-align: start;
-    font-size: 70px;
-    line-height: 90px;
+    font-size: 4.0vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     font-family: HelveticaNeueBold;
     color: white;
-    margin-top: 20%;
-    margin-left: 50px;
 }
 
 
@@ -246,6 +253,17 @@ body{
     justify-self: center;
     align-self: center;
     position: absolute;
+}
+.click-here{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
 }
 .title{
     font-family: HelveticaNeueBold;
@@ -264,7 +282,7 @@ body{
     padding-left: 20px;
     overflow: hidden;
     font-family: HelveticaNeueMedium;
-    font-size: 30px;
+    font-size: 1.5vw;
     border-width: 0;
     outline: none;
     border-radius: 25px;
@@ -315,58 +333,70 @@ body{
 /*-------------our story page-----------*/
 #our-story{
     position: relative;
-    margin-left: 50px;
-    margin-right: 50px;
     background-color: #FFFFFF;
+    display: flex;
+    flex:1;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+.our-story-content{
+    position: relative;
+    display: flex;
+    flex:1;
+    width: 100vw;
+    height: 100vh;
 }
 .title-story{
     text-align: start;
-    font-size: 40px;
-    padding-top: 20px;
+    font-size: 2.1vw;
+    padding-top: 1.5vh;
     font-family: HelveticaNeueLight;
     color: #000;
 }
 .quote-light{
     text-align: start;
     font-family: HelveticaNeueLight;
-    font-size: 30px;
-    line-height: 5px;
+    font-size: 1.8vw;
+    line-height: 0.2vw;
     margin-left: 5px;
-    padding-top: 30px;
+    padding-top: 1.6vh;
 }
 .quote-bold{
     text-align: start;
     font-family: HelveticaNeueBold;
-    line-height: 5px;
-    font-size: 35px;
-    padding-top: 20px;
+    line-height: 0.2vw;
+    font-size: 1.9vw;
+    padding-top: 1.5vh;
     margin-left: 5px;
 }
 .statement{
     text-align: start;
     font-family: HelveticaNeueThin;
-    line-height: 30px;
-    font-size: 25px;
-    padding-top: 30px;
+    line-height: 1.8vw;
+    font-size: 1.6vw;
     margin-left: 5px;
     margin-right: 5px;
 }
 .timeline{
     object-fit: contain;
+    width: 80vw;
+    height: 70vh;
     margin-left: 50px;
     margin-right: 50px;
     padding-bottom: 30px;
 }
 .go-to{
     font-family: HelveticaNeueLight;
-    font-size: 18px;
+    font-size: 1vw;
     margin-bottom: 20px;
     color: #000;
     border-right: 2px solid #000;
 }
 .home{
     font-family: HelveticaNeueLight;
-    font-size: 18px;
+    font-size: 1vw;
     height: min-content;
     background:none;
     border:none;
@@ -375,7 +405,7 @@ body{
 }
 .our-works{
     font-family: HelveticaNeueLight;
-    font-size: 18px;
+    font-size: 1vw;
     height: min-content;
     background:none;
     border:none;
@@ -384,7 +414,7 @@ body{
 }
 .pricing{
     font-family: HelveticaNeueLight;
-    font-size: 18px;
+    font-size: 1vw;
     height: min-content;
     background:none;
     border:none;
@@ -393,7 +423,7 @@ body{
 }
 .request-price{
     font-family: HelveticaNeueLight;
-    font-size: 18px;
+    font-size: 1vw;
     height: min-content;
     background:none;
     border:none;
@@ -437,46 +467,38 @@ body{
       top: 120px;
       width: 160px;
       height: 72px;
-      margin-right: 30px;
-      align-content: flex-end;
-      justify-self: flex-end;
-      justify-content: flex-end;
+
   }
   .per-slide{
     position: relative;
     top: 120px;
     height: 72px;
     width: 160px;
-    margin-left: 30px;
-    margin-right: 30px;
-    align-content: center;
-    justify-content: center;
+
 }
 .per-day{
     position: relative;
     top: 120px;
     height: 72px;
     width: 160px;
-    margin-left: 30px;
-    align-content: flex-start;
-    justify-content: flex-start;
 }
   .subscription-plans{
     position: relative;
     flex: 1;
     padding-left: 10px;
     left: 46%;
-    width: 160px;
+    height: 8vh;
+    width: 10vw;
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius:20px;
+    border-radius:90px;
     border-color: white;
     border-style: solid;
     border-width: 1px;
     text-align: center;
     background-color: black;
-    font-size: 20px;
+    font-size: 1.0vw;
     color: white;
     font-family: HelveticaNeueBold;
   }
@@ -484,7 +506,7 @@ body{
       position: relative;
       text-align: center;
       font-family: HelveticaNeueLight;
-      font-size: 43px;
+      font-size: 2.3vw;
       top: 100px;
       color: black;
       align-self: center;
@@ -494,7 +516,7 @@ body{
     text-align: center;
     height: min-content;
     font-family: HelveticaNeueLight;
-    font-size: 43px;
+    font-size: 2.3vw;
     background:none;
     border:none;
     top: 10%;
@@ -524,21 +546,23 @@ body{
   }
   .subscription-plans-active{
     position: relative;
-    width: 100%;
     flex: 1;
     top:120px;
+    height: 6vh;
+    width: 10vw;
     padding-left: 10px;
     left: 46%;
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius:20px;
+    border-radius:80px;
     border-color: black;
     border-style: solid;
     border-width: 1px;
     text-align: center;
+    vertical-align: middle;
     background-color: white;
-    font-size: 20px;
+    font-size: 1.0vw;
     color: black;
     font-family: HelveticaNeueBold;
   }

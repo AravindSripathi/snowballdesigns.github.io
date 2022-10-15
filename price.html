@@ -19,14 +19,14 @@
                     <div class="centered">Pricing</div>
                 </div>
                     <div class="container-fluid row px-0 subscription-container" id="mainPlan">
-                        <div class="row" style="width: 50vw; margin-left: -125px; margin-top: 70px;">
-                            <div class="col subscription">
+                        <div class="row" style="width: 80vw; margin-left: -125px; margin-top: 70px;">
+                            <div class="col subscription" style="width:fit-content">
                                 <button class="subscription-plans  shadow-none" onclick="buttonSubscription()">Subscription<br>Plans</button> 
                             </div>  
-                            <div class="col per-slide">
+                            <div class="col per-slide" style="width:fit-content">
                                 <button class="subscription-plans shadow-none" onclick="slideSubscription()">Per slide<br>Plans</button>
                             </div>
-                            <div class="col per-day">
+                            <div class="col per-day" style="width:fit-content">
                                 <button class="subscription-plans  shadow-none" onclick="daySubscription()">Per day<br>Plans</button>   
                             </div>
                         </div>
@@ -36,37 +36,38 @@
 
                     <!----------------------------Subscription Plan----------------------------------------------->
 
-                    <div class="px-0 subscriptionPlans" style="display: none;  margin-top: 70px;"  id="subscriptionButton">
+                    <div class="px-0 subscriptionPlans" style="display: none;  margin-top: 70px; justify-content: center; align-self: center; width: 100vw; height: 100vh;"  id="subscriptionButton">
                         <img class="back-arrow" src="images/Back arrow.png" onclick="goBack()" style="position: absolute;object-fit: contain; height: 50; width: 50; top: 30px; left:5%;"/>
                         <div class="col-md-1 subscription-plans-active  shadow-none">Subscription<br>Plans</div> 
                         <div class="row px-0 plans">
                             <div class="col-md-2">
-                                <h1 style="font-family: HelveticaNeueRegular; font-size: 50px; line-height: 50px;">Monthly plan</h1>
-                                <p style="font-family: HelveticaNeueRegular; font-size: 30px;">Validity: 30 days<br>Slides: 100 slides<br>Price: ₹ 7,500<br>Additional: ₹ 120/slide</p>
+                                <h1 style="font-family: HelveticaNeueRegular; font-size: 2.5vw; line-height: 2.5vw;">Monthly plan</h1>
+                                <p style="font-family: HelveticaNeueRegular; font-size: 1.8vw;">Validity: 30 days<br>Slides: 100 slides<br>Price: ₹ 7,500<br>Additional: ₹ 120/slide</p>
                             </div>  
                             <div class="col-md-2">
-                                <h1 style="font-family: HelveticaNeueRegular; font-size: 50px; line-height: 50px;">Quarterly plan</h1>
-                                <p style="font-family: HelveticaNeueRegular; font-size: 30px;">Validity: 3 months<br> Slides: 300 slides<br> Price: ₹ 13,500<br> Additional: ₹ 100/slide
+                                <h1 style="font-family: HelveticaNeueRegular; font-size: 2.5vw; line-height: 2.5vw;">Quarterly plan</h1>
+                                <p style="font-family: HelveticaNeueRegular; font-size: 1.8vw;">Validity: 3 months<br> Slides: 300 slides<br> Price: ₹ 13,500<br> Additional: ₹ 100/slide
                                     </p>
                             </div>
                             <div class="col-md-2">
-                                <h1 style="font-family: HelveticaNeueRegular; font-size: 50px; line-height: 50px;">Yearly plan</h1>
-                                <p style="font-family: HelveticaNeueRegular; font-size: 30px; ">Validity: 1 year<br>Slides: 1200 slides<br>Price: ₹ 36,000<br>Additional: ₹ 75/slide</p>                           
+                                <h1 style="font-family: HelveticaNeueRegular; font-size: 2.5vw; line-height: 2.5vw;">Yearly plan</h1>
+                                <p style="font-family: HelveticaNeueRegular; font-size: 1.8vw; ">Validity: 1 year<br>Slides: 1200 slides<br>Price: ₹ 36,000<br>Additional: ₹ 75/slide</p>                           
                                 </div>
                             </div>
-                            <div style="position:relative; flex:1; top:300px; text-align: center; font-size: 25px; font-family: Helvetica; font-weight: normal;">*prices shown are excluding any applicable taxes. Subscriptions can be canceled with a 10% charge</div>
+                            <div style="position:relative; flex:1; top:300px; text-align: center; font-size: 1.4vw; font-family: Helvetica; font-weight: normal;">*prices shown are excluding any applicable taxes. Subscriptions can be canceled with a 10% charge</div>
                         </div>
 
                         <!---------------------------Quarterly plan----------------------------------------------->
                         <div class="px-0 subscriptionPlans" style="display: none;  margin-top: 70px;"  id="slideButton">
                             <img class="back-arrow" src="images/Back arrow.png" onclick="goBack()" style="position: absolute;object-fit: contain; height: 50; width: 50; top: 30px; left:5%;"/>
-                            <div class="col-md-1 subscription-plans-active  shadow-none">Per slide<br>Plans</div> 
+                            <div class="col-md-1 subscription-plans-active  shadow-none">Per slide<br>Plans
+                            </div> 
                             <div class="row px-0 plans-two">
                                 <div class="col-md-4">
-                                    <h1 style="font-family: HelveticaNeueRegular; font-size: 50px; line-height: 25px; text-align: center;">₹ 350/slide up to 10 slides</h1>
-                                    <p style="font-family: HelveticaNeueRegular; font-size: 30px;  text-align: center;">₹300/slide from the 11th slide</p>
+                                    <h1 style="font-family: HelveticaNeueRegular; font-size: 2.5vw; line-height: 1.2vw; text-align: center;">₹ 350/slide up to 10 slides</h1>
+                                    <p style="font-family: HelveticaNeueRegular; font-size: 1.8vw;  text-align: center;">₹300/slide from the 11th slide</p>
                                 </div>
-                                <div style="position:relative; width: 100vw; top:100px; text-align: center; font-size: 25px; font-family: Helvetica; font-weight: normal;">*prices shown are excluding any applicable taxes</div>
+                                <div style="position:relative; width: 100vw; top:100px; text-align: center; font-size: 1.4vw; font-family: Helvetica; font-weight: normal;">*prices shown are excluding any applicable taxes</div>
                             </div>
                             </div>
 
@@ -74,13 +75,14 @@
                         <!---------------------------Yearly plan----------------------------------------------->
                             <div class="px-0 subscriptionPlans" style="display: none;  margin-top: 70px;"   id="dayButton">
                                 <img class="back-arrow" src="images/Back arrow.png" onclick="goBack()" style="position: absolute;object-fit: contain; height: 50; width: 50; top: 30px; left:5%;"/>
-                                <div class="col-md-1 subscription-plans-active  shadow-none">Per day<br>Plans</div> 
+                                <div class="col-md-1 subscription-plans-active  shadow-none">Per day<br>Plans
+                                </div> 
                                 <div class="row px-0 plans-three">
                                     <div class="col-md-4">
-                                        <h1 style="font-family: HelveticaNeueRegular; font-size: 50px; line-height: 25px; text-align: center;">₹ 1500/day of 8 hrs</h1>
-                                        <p style="font-family: HelveticaNeueRegular; font-size: 30px;  text-align: center;">₹100/hr after 8 hrs</p>
+                                        <h1 style="font-family: HelveticaNeueRegular; font-size: 2.5vw; line-height: 1.2vw; text-align: center;">₹ 1500/day of 8 hrs</h1>
+                                        <p style="font-family: HelveticaNeueRegular; font-size: 1.8vw;  text-align: center;">₹100/hr after 8 hrs</p>
                                     </div>
-                                    <div style="position:relative; width: 100vw; top:100px; text-align: center; font-size: 25px; font-family: Helvetica; font-weight: normal;">*prices shown are excluding any applicable taxes</div>
+                                    <div style="position:relative; width: 100vw; top:100px; text-align: center; font-size: 1.4vw; font-family: Helvetica; font-weight: normal;">*prices shown are excluding any applicable taxes</div>
                                 </div>
                                 </div>
                                 
@@ -89,7 +91,7 @@
                                       <div class="col-md-2">
                                         <button class="requestquote"
                                         style="font-family: HelveticaNeueLight;
-                                        font-size: 20px;
+                                        font-size: 1.4vw;
                                         height: min-content;
                                         background:none;
                                         border:none;
@@ -97,9 +99,9 @@
                                         color: #000;"
                                         onclick="location.href='request-quote.html'">Request a qoute</button>
                                         </div>
-                                    <div class="col-md-1">
+                                    <div class="col-md-2">
                                         <button class="contactus"style="font-family: HelveticaNeueLight;
-                                        font-size: 20px;
+                                        font-size: 1.2vw;
                                         height: min-content;
                                         background:none;
                                         border:none;
